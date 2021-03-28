@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>CSS3 </title>
+	<link href="style.css" rel="stylesheet"</link>
+    </meta>
+</head>
+<style type="text/css">
+
+
+/*	标签名称选择器。*/
+body{
+	font-size:16px;font-family:"微软黑体";background-color:#eeeeee;
+}
+h3{
+	padding:5px;font-size:16px;text-decoration:underline;
+	text-align:center;padding:10px;width:1600px;
+}
+table{
+	text-align:center;
+	width:400px;margin-left:auto;margin-right:auto;border-bottom:1px solid #888888;
+	border-collapse:collapse;
+}
+td{
+	border-bottom:1px solid #888888;padding:10px;
+}
+/* 表格中的第一对 tr*/
+tr:nth-child(1){
+	background-color:#7788aa;color:#ffffff;
+}
+/* 表格中的第偶数对 tr */
+tr:nth-child(even){
+	background-color:#e8e8e8;
+}
+/*	class 选择器。*/
+.head{
+	background-color:#003344;
+}
+h1{
+	background-color:#003344;color:white;font-weight:bold;font-size:30px;
+	text-align:center;padding:10px;margin:0px;
+}
+.content1{
+	text-align:center;padding:10px;
+	width:400px;margin-left:auto;margin-right:auto;padding:10px;border:1px dashed #888888;margin-top:10px;margin-bottom:10px;
+}
+div.keyword{
+	color:red
+}	
+ul{
+	text-align:left;padding:10px;
+}
+nav{
+	display:flex;
+}
+nav>.logo{
+	flex:none;width:320px;
+	background-color:#ffcccc;
+}
+nav>.menu{
+	flex:none; width:340px;
+	background-color:#ccccff;
+}
+nav>.user{
+	flex:none;width:360px;
+	background-color:#ccffcc;
+}
+nav>.selector{
+	flex:none;width:350px;
+	background-color:#FF40oo;
+}
+main{
+	display:flex;width:1600px;
+	justify-content:left;
+	align-items:flex-center;
+	background-color:#00B315;
+}
+main>.item{
+	flex:none;
+	width:320px;margin：10px；
+	color:color:#ffffff;
+}
+}
+
+nav>.clicker{
+	flex:none;width:320px;
+	background-color:blue;
+	text-align:right;
+}
+main1{
+	display:flex;width:1600px;
+	justify-content:left;
+	align-items:flex-center;
+	background-color:#00B315;
+}
+main1>.item{
+	flex:none;
+	width:320px;margin：10px；
+	background-color:#ffcccc;
+}
+main2{
+	display:flex;width:1600px;
+	justify-content:left;
+	align-items:flex-center;
+	background-color:#00B315;
+}
+main2>.item{
+	flex:none;
+	width:320px;margin：10px；
+	background-color:color:#ffffff;
+}
+.content{
+	text-align:center;padding:10px;
+	width:1000px;margin-left:auto;margin-right:auto;
+}
+div.box{
+		width:280px;padding:10px;margin:10px;background-color:white;
+		display:inline-block;vertical-align:top;
+} 
+div.box1{
+		width:280px;padding:10px;margin:10px;background-color:white;
+		display:inline-block;vertical-align:media;
+} 
+
+.title{
+	font-weight:bold;font-size:16px;
+	text-align:center;padding:10px;
+}
+@media screen and (max-width:600px){
+	.head{font-size:24px;}
+	.content{width:100%;text-align:center;}
+}
+/*	id 选择器。*/
+#btn{
+	border:1px solid #888888;
+	background-color:#ffffff;padding:5px;;margin-left:auto;margin-right:auto;
+}
+/*	虚拟选择器：搭配其他选择器使用。*/
+/* :hover 虚拟选择器：鼠标移到目标上时，调用一组设定 */
+#btn:hover{
+	background-color:#888888;
+}
+/* :focus 虚拟选择器：当目标取得焦点时，调用一组设定 */
+input:focus{
+	border:2px solid #ff0000;
+}
+/*	阶层式选择器：搭配其他选择器使用
+ul.favorite a{
+	color:#0000ff;text-align:left;
+}
+ul.demo a{
+	color:#008800;text-align:left;
+}
+ul.music a{
+	color:#0088ee;text-align:left;
+}
+
+</style>
+
+
+<body>
+	<h1>老蔡的网页！
+		<embed src="aa.jpg" ></embed>
+	</h1>
+	<nav>
+		<div class="logo">Windows电脑软件：</div>
+		<div class="menu">有用软件</div>
+		<div class="user">影视网站：</div>
+		<div class="selector">我的音乐链接：</div>
+	</nav>
+	<main>
+				<ul class="item"> 
+					<li><a href="https://sparanoid.com/lab/7z" target="_blank">No.9.7-Zip</br></a></li>
+					<li><a href="https://geekuninstaller.com" target="_blank">No.8.Geek Uninstaller</br></a></li>
+					<li><a href="https://www.microsoft.com/en-us/edge" target="_blank">No.7.Microsoft Edge</br></a></li>
+					<li><a href="https://potplayer.daum.net/?lang=zh_CN​" target="_blank">No.6.PotPlayer</br></a></li>
+					<li><a href="http://www.internetdownloadmanager.com" target="_blank">No.5.极速下载工具IDM</br></a></li>
+					<li><a href="http://cn.ejie.me" target="_blank">No.4.Clover</br></a></li>
+					<li><a href="https://www.ccleaner.com" target="_blank">No.3.CCleaner</br></a></li>
+					<li><a href="https://www.techspot.com/downloads/6843-wox.html" target="_blank">No.2.Wox 根据键入启动、存取程序和web 内容</br></a></li>
+					<li><a href="https://www.voidtools.com/zh-cn/" target="_blank">No.1.文件搜索软件Everything</br></a></li>
+				</ul>
+		
+				<ul class="item">
+					<li><a href="https://www.youtube.com/watch?v=xEewU...​" target="_blank">2020年最新永久免费云服务器VPS （HeroKu）</a></li>
+				</ul>
+
+				<ul class="item">
+					<li><a href="https://video.bqrdh.com" target="_blank">不求人导航</a></li>
+					<li><a href="https://www.nfmovies.com" target="_blank">Netflix影视</a></li>
+					<li><a href="https://gaoqing.fm" target="_blank">高清电台</a></li>
+					<li><a href="https://yyets.dmesg.app" target="_blank">人人影视下载</a></li>
+					<li><a href="http://www.i8k.cc" target="_blank">IU极客</a></li>
+					<li><a href="https://www.adcmove.com" target="_blank">ADC影视</a></li>
+					<li><a href="https://www.zhenbuka.com" target="_blank">真不卡</a></li>
+					<li><a href="https://www.mdoutv.com" target="_blank">麦豆TV</a></li>
+				</ul>
+		
+				<ul class="item">
+					<li><a href="https://www.youtube.com/watch?v=AHpVCCar9nQ&list=RDAHpVCCar9nQ&start_radio=1" target="_blank">托賽里小夜曲</a></li>
+					<li><a href="https://www.youtube.com/watch?v=T7EpSmABIGc&list=RDAHpVCCar9nQ&index=2" target="_blank">红河谷加拿大民歌</a></li>
+					<li><a href="https://www.bing.com/videos/search?q=(2)+%e7%b6%93%e5%85%b8%e6%83%85%e6%ad%8c%e3%80%8a%e6%89%98%e8%b3%bd%e9%87%8c%e5%98%86%e6%81%af%e5%b0%8f%e5%a4%9c%e6%9b%b2%e3%80%8b%e4%b8%ad%e6%96%87%e6%ad%8c%e8%a9%9e%e7%89%88%e4%b9%9f%e5%be%88%e5%a5%bd%e8%81%bd+%e2%80%93%e7%be%8e%e8%81%b2%e7%be%8e%e5%9c%96%e7%b2%be%e5%bf%83%e8%a3%bd%e4%bd%9c+-+YouTube&view=detail&mid=A7A61E77C8AF9598F4E1A7A61E77C8AF9598F4E1&FORM=VIRE" target="_blank">托賽里嘆息小夜曲</a></li>
+					<li><a href="https://www.youtube.com/watch?v=5kNpv5qMyOQ"target="_blank" >世界十大音樂家的小夜曲 The intoxicating Serenade of the top ten musicians</a></li>
+					<li><a href="https://www.youtube.com/watch?v=gZlJuaoG6-U" target="_blank">舒伯特小夜曲</a></li>
+					<li><a href="https://www.youtube.com/watch?v=erXCJ_HSaS4" target="_blank">梁祝小提琴</a></li>
+					<li><a href="https://www.youtube.com/watch?v=rOjHhS5MtvA"target="_blank" >贝多芬第九交响乐 Beethoven 9 - Chicago Symphony Orchestra</a></li>
+					<li><a href="https://www.youtube.com/watch?v=c57aFp4LAO4" target="_blank">蓝色多瑙河</a></li>
+					<li><a href="https://www.youtube.com/watch?v=zzfTW6HbrvU" target="_blank">皇帝圓舞曲</a></li>
+					<li><a href="https://www.youtube.com/watch?v=aOcWrhCd4M8" target="_blank">春之声圓舞曲</a></li>
+				</ul>
+	</main>	
+	<nav>
+		<div class="logo">我的课程链接：</div>
+		<div class="menu">COVID-19 链接：</div>
+		<div class="user">GitHub有用链接：</div>
+		<div class="selector">電腦錄屏及其他：</div>
+	</nav>
+	
+	<main1>		
+
+				<ul class="item">
+					<li><a href="https://training.pada-x.com/online.htm" target="_blank">彭彭课程</a></li>
+					<li><a href="http://coursera.org" target="_blank">Coursera 课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w" target="_blank">Deeplearning.ai课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UC5zx8Owijmv-bbhAK6Z9apg" target="_blank">Artificial Intelligence - All in One</a></li>
+					<li><a href="https://www.youtube.com/c/Inty3000/playlists" target="_blank">Inly课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UCGj-3RuJeNdzTsACq8beDRg" target="_blank">C 鱼课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UC9kOupnRoiKdeOJILgQ1CsA" target="_blank">程序员小飞课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UCdyjiB5H8Pu7aDTNVXTTpcg" target="_blank">Morvan课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">Hung-yi Lee课程</a></li>
+					<li><a href="https://www.youtube.com/channel/UC6F7TKhp26EZOPrQg9hCZaQ" target="_blank">亚斯特拉的索哥课程</a></li>
+			</ul>
+		
+				<ul class="item">
+					<li><a href="https://www.worldometers.info/coronavirus/" target="_blank">全球COVID-19每日病例统计</a></li>
+					<li><a href="https://superpyq.com/covid/ca/" target="_blank">加拿大COVID-19每日病例统计</a></li>
+					<li><a href="https://www.ottawapublichealth.ca/en/reports-research-and-statistics/daily-covid19-dashboard.aspx" target="_blank">渥太华COVID-19每日病例统计</a></li>
+					<li><a href="https://coronavirus.jhu.edu/map.html" target="_blank">COVID-19 JPU每日病例统计</a></li>
+					<li><a href="https://covid19-projections.com/" target="_blank">Covid-19 Projection Using Machine Learning(Youyang Gu)</a></li>
+					<li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html#a1" target="_blank">Canada Covid-19 图例</a></li>
+				</ul>
+		
+				<ul class="item">
+					<li><a href="https://www.github.com/">我的github</a></li>
+					<li><a href="https://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html" target="_blank">wordcloud</a></li>
+					<li><a href="https://docs.github.com/cn/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll" target="_blank">使用 Jekyll 设置 GitHub Pages 站点</a></li>
+					<li><a href="https://www.huorong.cn/person5.html" target="_blank">火絨安全</a></li>
+					<li><a href="https://www.ccleaner.com/recuva" target="_blank">Recuva数据恢复</a></li>
+					<li><a href="https://www.bleachbit.org/" target="_blank">BleachBit磁盘清理</a></li>
+					<li><a href="https://www.freedownloadmanager.org/zh/" target="_blank">FDM下载软件</a></li>
+                </ul>
+		
+				<ul class="item">
+					<li><a href="https://screenrec.com/" target="_blank">ScreenRec</a></li>
+					<li><a href="https://mathewsachin.github.io/Captura/" target="_blank">Captura</a></li>
+					<li><a href="https://obsproject.com/" target="_blank">OBS Studio</a></li>
+					<li><a href="http://bit.ly/3oeXDbP" target="_blank">Uninstaller</a></li>
+					<li><a href="https://www.deepl.com/translator" target="_blank">DeepL Translator</a></li>
+                </ul>
+	</main1>		
+ 	<nav>
+		<div class="logo">莫烦网页链接：</div>
+		<div class="menu">"机器学习：</div>
+		<div class="user">数据处理：</div>
+		<div class="selector">提效工具：</div>
+	</nav>
+	<main2>
+        <ul class="item">
+
+
+              <a class=""
+                 href="https://mofanpy.com/learning-steps/">
+                <img class="icon-image" src="https://mofanpy.com/static/img/icon/learning-steps.png" alt="推荐学习顺序">
+                推荐学习顺序
+              </a><br>
+
+               <a class="clicker"
+                 href="">
+                <img class="icon-image" src="https://mofanpy.com/static/img/icon/python_icon.png" alt="Python基础 ▾">
+                Python基础 ▾
+              </a>
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/multiprocessing_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="多进程 multiprocessing">
+                        <a href="https://mofanpy.com/tutorials/python-basic/multiprocessing/">多进程 multiprocessing</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/thread_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="多线程 threading">
+                        <a href="https://mofanpy.com/tutorials/python-basic/threading/">多线程 threading</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/GUI_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="窗口视窗 Tkinter">
+                        <a href="https://mofanpy.com/tutorials/python-basic/tkinter/">窗口视窗 Tkinter</a></li>
+           </uL>
+
+       <ul class="item">
+
+           <li class="dropbtn">
+              <a class="clicker" href="">
+                  <img class="icon-image" src="https://mofanpy.com/static/img/icon/ML_icon.png" alt="机器学习 ▾">
+                机器学习 ▾
+              </a>
+
+                <ul class="dropdown-content">
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/ML_intro_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="有趣的机器学习">
+                        <a href="https://mofanpy.com/tutorials/machine-learning/ML-intro/">有趣的机器学习</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/rl_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="强化学习 Reinforcement Learning">
+                        <a href="https://mofanpy.com/tutorials/machine-learning/reinforcement-learning/">强化学习 Reinforcement Learning</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/evolution_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="进化算法 Evolutionary Algorithm">
+                        <a href="https://mofanpy.com/tutorials/machine-learning/evolutionary-algorithm/">进化算法 Evolutionary Algorithm</a></li>
+
+                      <li class="dropbtn"><img class="icon-image" src="https://mofanpy.com/static/img/icon/neural_net_icon.png"
+                                               style="max-width:1.5em; max-height:1.1em;" alt="神经网络 ▾">
+                        <a class="clicker">神经网络 ▾</a>
+                        <ul class="dropdown-content">
+
+                            <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/tf_icon.png"
+                                     style="max-width:1.5em; max-height:1.1em;" alt="Tensorflow">
+                              <a href="https://mofanpy.com/tutorials/machine-learning/tensorflow/">Tensorflow</a>
+                            </li>
+
+                            <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/torch_icon.png"
+                                     style="max-width:1.5em; max-height:1.1em;" alt="PyTorch">
+                              <a href="https://mofanpy.com/tutorials/machine-learning/torch/">PyTorch</a>
+                            </li>
+
+                            <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/theano_icon.png"
+                                     style="max-width:1.5em; max-height:1.1em;" alt="Theano">
+                              <a href="https://mofanpy.com/tutorials/machine-learning/theano/">Theano</a>
+                            </li>
+
+                            <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/keras_icon.jpg"
+                                     style="max-width:1.5em; max-height:1.1em;" alt="Keras">
+                              <a href="https://mofanpy.com/tutorials/machine-learning/keras/">Keras</a>
+                            </li>
+                        </ul>
+                      </li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/sklearn_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="通用机器学习 Scikit-learn">
+                        <a href="https://mofanpy.com/tutorials/machine-learning/sklearn/">通用机器学习 Scikit-learn</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/nlp_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="自然语言处理">
+                        <a href="https://mofanpy.com/tutorials/machine-learning/nlp/">自然语言处理</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/ML-practice_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="机器学习实战">
+                        <a href="https://mofanpy.com/tutorials/machine-learning/ML-practice/">机器学习实战</a></li>
+                </ul>
+            </li>
+			</ul>
+
+     <ul class="item">
+            <li class="dropbtn">
+              <a class="clicker"
+                 href="">
+                <img class="icon-image" src="https://mofanpy.com/static/img/icon/data_icon.png" alt="数据处理 ▾">
+                数据处理 ▾
+              </a>
+
+                <ul class="dropdown-content">
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/np_pd_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="数据 Numpy &amp; Pandas">
+                        <a href="https://mofanpy.com/tutorials/data-manipulation/np-pd/">数据 Numpy &amp; Pandas</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/plt_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="画图 Matplotlib">
+                        <a href="https://mofanpy.com/tutorials/data-manipulation/plt/">画图 Matplotlib</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/scraping_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="网页爬虫">
+                        <a href="https://mofanpy.com/tutorials/data-manipulation/scraping/">网页爬虫</a></li>
+                </ul>
+            </li>
+			</ul>
+		</div>
+
+       <ul class="item">
+            <li class="dropbtn">
+              <a class="clicker"
+                 href="">
+                <img class="icon-image" src="https://mofanpy.com/static/img/icon/others_icon.png" alt="提效工具 ▾">
+                提效工具 ▾
+              </a>
+                <ul class="dropdown-content">
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/git_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="Git 版本管理">
+                        <a href="https://mofanpy.com/tutorials/others/git/">Git 版本管理</a></li>
+
+                      <li><img class="icon-image" src="https://mofanpy.com/static/img/icon/linux_icon.png"
+                               style="max-width:1.5em; max-height:1.1em;" alt="Linux 简易教学">
+                        <a href="https://mofanpy.com/tutorials/others/linux-basic/">Linux 简易教学</a></li>
+                </ul>
+            </li>
+        </ul>
+      </li>
+      <li class="nav-notification nav-float-right"></li>
+    </ul>
+  </nav>
+</main2>
+
+</body>
+</html>
