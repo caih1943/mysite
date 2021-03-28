@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![avatar](avatar.jpg)
+![头像](aa.jpg)
 
 # LaocaiHome
 
