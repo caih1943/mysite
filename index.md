@@ -4,7 +4,7 @@ layout: default
 
 ![avatar](avatar.jpg)
 
-# Laocai
+# LaocaiHome
 
 A LaocaiHome
 
